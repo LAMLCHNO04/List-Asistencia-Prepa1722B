@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/menu.css">
+    <!--Iconos-->
+    <link rel="stylesheet" href="public/fontawesome-free-6.0.0-web/css/all.css">
+    <title>Login de usuario</title>
+</head>
+<body style="background-image: url('public/img/udgfondo2.jpg'); background-repeat: no-repeat; background-position: center center;background-size: 100% 100%;">
+    <div class="wrapper fadeInDown" style="z-index: 2;">
+        <div id="formContent" style="background-color:rgba(180,180,180,0.8);">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="public/img/student.png" id="icon" alt="User Icon" />
+            <!--<h1>Bitacora De Asistencia</h1> <h1>Preparatoria 17</h1>-->
+          </div>
+        
+          <!-- Login Form -->
+          <form id="frmLogin" method="POST" onsubmit="return loginUsuario()">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" required>
+            <div class="divpass">
+              <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required><i class="fas fa-eye-slash eye" id="eye"></i>
+            </div>
+        
+            <input type="submit" class="" value="Iniciar Sesión">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contactar al administrador</a>
+          </div>
+      
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacto de soporte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              luis.mlozano@alumnos.udg.mx
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="public/jquery/jquery-3.6.0.js"></script>
+      <script src="public/bootstrap/js/popper.min.js"></script>
+      <script src="public/bootstrap/js/bootstrap.min.js"></script>
+      <script src="public/sweetalert2/sweetalert2@11.js"></script>
+      <script src="public/js/usuarios/login.js"></script>
+</body>
+</html>
